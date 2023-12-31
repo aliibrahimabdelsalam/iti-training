@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   progress{
+        appearance: none;
+      }
+      progress[value]::-webkit-progress-bar{
+        background: linear-gradient(45deg, yellow, red);
+        /* box-shadow: 0px 0px 2px red inset; */
+        border-radius: 20px;
+
+      }
+</style>
+<body>
+    
+    <progress min="0" max="100" value="6"></progress>
+    <span></span>
+    <script>
+        var p=document.getElementsByTagName('progress')[0];
+         var count=0;
+         function countProgress(){
+            if(count<100){
+                p.value=count;
+                document.querySelector("span").textContent=count+'%';
+                count=count+1;
+            }else if(count==100){
+                p.value=count;
+                 document.querySelector("span").textContent=count+'%';
+                count=0;
+            }
+            
+         setTimeout('countProgress()',500);
+         }
+         countProgress();
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        ul{
+            list-style: none;
+            display:flex;
+            text-align: center;
+        }
+        .active{
+            color: red;
+            cursor: pointer;
+
+        }
+        p{
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: antiquewhite;
+            cursor: pointer;
+        }
+        .hidden{
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+    <ul>
+        <li><p class="home active"  onclick="test(this,1)">Home</p></li>
+        <li><p  class="content" onclick="test(this,2)">Content</p></li>
+        <li><p  class="service" onclick="test(this,3)">Service</p></li>
+        <li><p  class="about" onclick="test(this,4)">About</p></li>
+    </ul>
+    </div>
+    <span class=" home">home</span>
+    <span class="hidden content">content</span>
+    <span class="hidden service">Service</span>
+    <span class="hidden about">About</span>
+    <script src="1.js"></script>
+</body>
+</html>

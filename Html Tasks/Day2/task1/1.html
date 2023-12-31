@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <span>Red Text</span>
+        <input type="range" min="0" max="255" value="50"class="red"/>
+        <br/>
+        <span>Blue Text</span>
+        <input type="range" min="0" max="255" value="50" class="blue">
+        <br/>
+        <span>Green Text</span>
+        <input type="range" min="0" max="255" value="50" class="green">
+        <br/>
+        <!-- <input type="submit" value="submit"> -->
+    </form>
+    <h2>Hello World</h2>
+    <script>
+        var text=document.querySelector("h2");
+        var redRange=document.querySelector(".red");
+        var blueRange=document.querySelector(".blue");
+        var greenRange=document.querySelector(".green");
+        redRange.addEventListener("input",function(e){
+            redRange.value=redRange.value;
+            text.style.color=`rgb(${redRange.value},${greenRange.value},${blueRange.value})`;
+        })
+        blueRange.addEventListener("input",function(e){
+            blueRange.value=blueRange.value
+            text.style.color=`rgb(${redRange.value},${greenRange.value},${blueRange.value})`
+        })
+        greenRange.addEventListener("input",function(e){
+            greenRange.value=greenRange.value
+            text.style.color=`rgb(${redRange.value},${greenRange.value},${blueRange.value})`
+        })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #DDD;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    width: 100%; 
+    margin-top: 20px;  
+    height: 100vh;
+}
+.left{
+    width: 25%;
+    display: flex;
+    height: 100%;
+    background-color: rgb(98, 88, 241);
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+    box-shadow:  -2px 9px 29px #000, -7px 16px 29px #000
+}
+h1{
+    font-size: 60px;
+}
+h3{
+    font-size: 20px;
+}
+p{
+    padding-top: 10px;
+    font-size: 30px;
+    color: #f1eded;
+}
+.footer{
+    font-size: 22px;
+    text-align: center;
+}
+.right{
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+    background-color:#fff;
+    padding:0 10%;
+    margin-top: 30px;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 3px 4px 11px #000;
+}
+label{
+    width:40%;
+    margin-bottom: 10px;
+    margin-right: 11px;
+}
+.inputDate{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+input{
+    width:30%;
+    margin-right: 90px;
+    padding: 10px;
+}
+button{
+    background-color:rgb(98, 88, 241) ;
+    color:white;
+    padding: 13px;
+    border-width: 1px;
+    border-radius: 10px;
+}
+span{
+    display: block;
+    margin-bottom: 5px;
+}
+textarea {
+  resize: none;
+  display: block;
+  width:100%;
+  box-shadow: 1px 1px 3px #000;
+
+  /* border-color: "red"; */
+}
+

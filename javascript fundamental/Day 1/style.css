@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        font-family: 'Raleway', sans-serif;
+
+}
+nav{
+display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+padding-top: 10px;  
+width: 80%;  
+margin: 0 auto;
+}
+.logo{
+    color:white;
+    width: 20%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px; 
+}
+ul{
+    width: 80%;
+     display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+ul li{
+        float: left;
+        margin-left: 10px;
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url("../Day1/bg.jpg");
+        background-size: cover;
+        text-align: center;
+        background-position: fixed;
+
+}
+header{
+    width: 80%;
+    margin: 0 auto;
+}
+.bts
+{
+    display: inline-block;
+    min-width: 196px;
+    text-align: center;
+    border: none;
+    padding: 15px 10px;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    background: #d82a4e;
+}
+.content{
+    text-align: center;
+    padding-top: 240px;
+        color: #fff;
+        margin: 0 auto 105px;
+    width: 62%;
+
+}
+h2{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.content p{
+    font-size: 14.1px;
+    line-height: 2.2;
+    font-weight: 500;
+}
+.form{
+    margin: 0 auto;
+    width: 66%;
+}
+input[type=text], input[type=email] {
+    height: 53px;
+    width: 28%;
+    padding: 0 30px;
+    margin-right: 22px;
+    float: left;
+    border: none;
+    font-size: 14px;
+    background: #edf4f6
+}
+input[type=submit]{
+    display: inline-block;
+    min-width: 196px;
+    text-align: center;
+    border: none;
+    padding: 15px 10px;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    background: #d82a4e;
+}
+
+section{
+    margin: 50px auto;
+width: 80%;
+text-align: center;
+height: 325px;
+padding: 30px;
+    background: #d82a4e;
+
+}
+section h2{
+    color: #fff;
+}
+.search-form{
+    background: #fff;
+    height: 150px;
+    margin: 0 auto;
+    width: 71%;
+    padding: 20px;
+}
+.search-form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

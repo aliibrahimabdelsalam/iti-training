@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="1.avif" width="500px" height="400px"/>
+    <br>    
+<audio controls>
+    <source src="2.mp3"/>
+</audio>
+<button class="play">Play</button>
+<button class="pause">Pause</button>
+<button class="reload">Reload</button>
+<button class="mute">Mute</button>
+<input type="range" min="0" max="1" step=".1" value="1" class="rangeVolume">
+<input type="range" min="0"  value="0" class="rangeTime">
+<script>
+    var audio=document.querySelector("audio");
+    var playAudio=document.querySelector(".play")
+    var pauseAudio=document.querySelector(".pause")
+    var reloadAudio=document.querySelector(".reload")
+    var muteAudio=document.querySelector(".mute")
+    var rangeVolume=document.querySelector(".rangeVolume")
+    var rangeTime=document.querySelector(".rangeTime")
+    playAudio.addEventListener("click",function(){
+        audio.play();
+    })
+    pauseAudio.addEventListener("click",function(){
+        audio.pause();
+    })
+    reloadAudio.addEventListener("click",function(){
+        audio.load();
+        audio.pause();
+    })
+    muteAudio.addEventListener("click",function(){
+        audio.muted=!audio.muted
+    })
+    rangeVolume.addEventListener("input",function(){
+        audio.volume=rangeVolume.value
+    })
+    rangeTime.addEventListener("input",function(){
+        audio.currentTime=rangeTime.value
+    })
+    audio.addEventListener("durationchange",function(){
+        rangeTime.max=audio.duration
+    })
+    audio.addEventListener("timeupdate",function(){
+        rangeTime.value=audio.currentTime;
+    })
+</script>
+</body>
+</html>

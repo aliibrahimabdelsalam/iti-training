@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    #triangle-up {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 20px solid black;
+      position: absolute;
+      left: 45%;
+      top: 52%;
+    }
+    .fa-heart{
+        font-size: 40px;
+        transform: rotate(180deg);  
+        
+    }
+    .content{
+        height: 300px;
+        width: 200px;
+        border: 4px solid red;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .first{
+        font-size: 40px;
+        position: absolute;
+        left: 3px;
+        top: 0px;
+        font-family: "Bradley Hand"	;
+    }
+    .second{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 40px;
+    }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <span class="first">A</span>
+        <i class="fa-solid fa-heart" ></i>
+        <div id="triangle-up"></div>
+        <span class="second">A</span>
+    </div>
+</body>
+</html>

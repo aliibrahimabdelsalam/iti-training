@@ -1,0 +1,9 @@
+div{
+    width: 100px;
+    height: 70px;
+    background-color: black;
+    display: inline-block;
+}
+.fa-eye{
+    cursor: pointer;
+}

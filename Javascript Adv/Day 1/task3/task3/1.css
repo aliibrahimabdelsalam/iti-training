@@ -1,0 +1,13 @@
+.invalid-feedback{
+    display: none;
+}
+.container{
+    margin: 30px auto;
+    width: 80%;
+}
+body{
+    text-align: center;
+}
+.div{
+    padding: 5px;
+}

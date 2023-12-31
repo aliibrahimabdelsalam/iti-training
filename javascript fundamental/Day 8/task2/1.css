@@ -1,0 +1,14 @@
+.form{
+    width: 60%;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+}
+
+.active{
+    display:inline-block
+}
+/* .box{
+    width: 20%;
+} */

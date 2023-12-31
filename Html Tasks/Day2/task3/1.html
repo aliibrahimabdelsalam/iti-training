@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <button>click</button>
+    <input type="color" name="" id="color">
+    </div>
+    <canvas id="canvas" style="background-color: aqua; width: 600px;height: 600px;"></canvas>
+    <script>
+        var btn=document.querySelector("button")
+         var c=document.querySelector("#canvas");
+         var ctx=c.getContext("2d");
+         btn.addEventListener("click",function(){
+            var color=document.querySelector("#color").value;
+            ctx.clearRect(0,0,c.width,c.height);
+            for(var i=0;i<30;i++){
+                ctx.beginPath()
+                ctx.strokeStyle=color;
+                var x=Math.floor(Math.random()*c.width);
+                var y=Math.floor(Math.random()*c.height);
+                ctx.arc(x,y,20,0,Math.PI*2)
+                ctx.stroke();
+            }
+        })
+       
+        
+    </script>
+</body>
+</html>

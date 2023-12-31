@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-size: cover;
+            background-image: url("1.jpg"),url("1.jpg");
+            border: 0px solid transparent;
+            background-blend-mode: normal;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 105px;
+            border-bottom-right-radius: 105px;
+            width: 631px;
+            height: 350px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="1.jpg" width="400px"/> -->
+    <div></div>
+    <br>
+    <button class="saturation">Saturate</button>
+    <button class="color-burn">color-burn</button>
+    <button class="exclusion">exclusion</button>
+    <button class="multiply"> multiply</button>
+    <button class="color-dodge">color-dodge</button>
+    <button class="normal">Normal</button>
+    <script>
+        var btns=document.querySelectorAll("button");
+        var div=document.querySelector("div");
+        btns.forEach(element => {
+            element.addEventListener("click",function(e){
+                var value=e.target.getAttribute("class")
+                div.style.backgroundBlendMode =value;
+            })
+        });
+
+    </script>
+</body>
+</html>

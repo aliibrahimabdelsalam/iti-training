@@ -1,0 +1,72 @@
+.item1 { grid-area: navbar;
+        background-color: #f568a0;
+}
+.item2 { grid-area: sidebar; 
+        background-color: #a63d67;
+}
+.item3 { grid-area: content1; 
+        background-color: #ff3c8a;
+}
+.item4 { grid-area: content2;
+        background-color: #a30f8d;
+ }
+.item5 { grid-area: content3;
+        background-color: #fb8fba;
+ }
+.item6 { grid-area: footer; 
+        background-color: #ffa3c8;
+}
+
+.grid-container {
+  display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  grid-template-areas:
+    'navbar navbar navbar navbar '
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'sidebar  content1  content2  content3'
+    'footer footer footer footer';
+    /* grid-template-rows: 6; */
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 10px;
+}
