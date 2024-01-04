@@ -1,4 +1,3 @@
-
 function Shape(w, h) {
     if (this.constructor == Shape) {
         throw "You can't make a Object from Shape Class"
